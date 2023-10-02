@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers|Math</title>
+</head>
+<body>
+
+    <section>
+        <h1>O seu número é <strong><span id="valor">0</span></strong></h1>
+        <h4>Raiz quadrada: <strong><span id="raiz">0</span></strong></h4>
+        <h4>É um número inteiro? <strong><span id="vInt">0</span></strong></h4>
+        <h4>É NaN: <strong><span id="vNan">0</span></strong></h4>
+        <h4>Arredondando pra baixo: <strong><span id="baixo">0</span></strong></h4>
+        <h4>Arredondando pra cima: <strong><span id="cima">0</span></strong></h4>
+        <h4>Com duas casa decimais: <strong><span id="duas">0</span></strong></h4>
+    </section>
+
+
+    <script>
+        // Numbers e Objeto Math
+
+        let numero = Number(prompt('Digite um número?'));
+        let valor = document.getElementById('valor');
+        let raiz = document.getElementById('raiz');
+        let vInt = document.getElementById('vInt');
+        let vNan = document.getElementById('vNan');
+        let baixo = document.getElementById('baixo');
+        let cima = document.getElementById('cima');
+        let duas = document.getElementById('duas');
+
+        // let n = valor.toFixed(2)
+
+        valor.innerHTML = `${numero}`;
+        raiz.innerHTML = `${numero ** 0.5}`;
+        vInt.innerHTML = `${Number.isInteger(numero)}`;
+        vNan.innerHTML = `${Number.isNaN(numero)}`;
+        baixo.innerHTML = `${Math.floor(numero)}`;
+        cima.innerHTML = `${Math.ceil(numero)}`;
+        duas.innerHTML = `${numero.toFixed(2)}`;
+    </script>
+</body>
+</html>
