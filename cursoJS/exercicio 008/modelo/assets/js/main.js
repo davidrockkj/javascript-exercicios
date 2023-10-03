@@ -39,8 +39,7 @@ function calculoIMC() {
                 aviso.innerHTML = `IMC: ${imc} - Obesidade grau 2`;
             else if (imc > 40)
                 aviso.innerHTML = `IMC: ${imc} - Obesidade grau 3`;
-            else
-                aviso.innerHTML = `IMC: ${imc} - PROCURA O PROFESSOR XAVIER`;
+            
             aviso.classList.remove('invalido');
             aviso.classList.add('preenchido');
         }
