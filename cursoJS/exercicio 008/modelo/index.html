@@ -39,15 +39,15 @@
       <h1>Calcule seu IMC</h1>
 
       <form class="formDados">
-        <p>Peso:</p>
-        <input type="text" id="peso">
-        <p>Altura:</p>
-        <input type="text" id="altura">
+        <p>Peso (kg):</p>
+        <input type="number" step="0.01" id="peso">
+        <p>Altura (m):</p>
+        <input type="number" step="0.01" id="altura">
         <button id="btnCalcular">Calcular</button>
       </form>
     </div>
     
-    <span>Altura inválida</span>
+    <div id="aviso"></div>
   </section>
 
 

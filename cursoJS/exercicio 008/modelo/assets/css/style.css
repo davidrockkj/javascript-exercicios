@@ -81,6 +81,21 @@ section#imc-table, section#resultado-table {
   width: 50%;
 }
 
-.calculado {
+.container #aviso {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.preenchido {
+  color: white;
   background-color: var(--primary-color);
+}
+
+.invalido {
+  color: black;
+  background-color: orangered;
 }
