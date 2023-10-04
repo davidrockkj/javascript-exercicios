@@ -81,21 +81,25 @@ section#imc-table, section#resultado-table {
   width: 50%;
 }
 
-.container #aviso {
+/* #aviso {
   height: 50px;
+  width: 100%;
   display: flex;
   align-items: center;
-  padding-left: 10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-}
+} */
 
-.preenchido {
+.preenchido, .invalido {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  padding-left: 10px;
   color: white;
-  background-color: var(--primary-color);
+  background-color: rgb(31, 155, 89);
 }
 
 .invalido {
   color: black;
-  background-color: orangered;
+  background-color: rgb(255, 108, 108);
 }
