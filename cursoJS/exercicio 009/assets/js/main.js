@@ -1,3 +1,5 @@
+/* Meu jeito ------------------------------------------------------------------------- */
+
 // Função para formatar a data
 function formatarData (data) {
     return data >= 10 ? data : `0${data}`;
@@ -90,3 +92,31 @@ function mostrarData () {
 }
 
 mostrarData();
+
+
+
+
+
+
+/* Jeito do curso ----------------------------------------------------------------------- */
+
+/*
+const h1 = document.querySelector('.container h1');
+const data = new Date();
+const opcoes = {
+    dateStyle: 'full';
+    timeStyle: 'short';
+};
+
+h1.innerHTML = data.toLocaleDateString('pt-BR', opcoes);
+*/
+
+
+
+/* ou ----------------------------------------------------------------------------------- */
+
+/*
+const h1 = document.querySelector('.container h1');
+const data = new Date();
+h1.innerHTML = data.toLocaleDateString('pt-BR', {dateStyle: 'full', timeStyle: 'short'});
+*/
