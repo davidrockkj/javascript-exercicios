@@ -11,11 +11,26 @@ const principalDiv = document.getElementById('principal');
 // Criando a div nova
 const divNova = document.createElement('div');
 
+    // Iterando (percorrendo) a lista Elementos
     for (let i = 0; i < elementos.length; i++) {
         // Salvando a tag na variável
         let tagObj = elementos[i].tag;
         // Salvando o texto na variável
         let textoObj = elementos[i].texto;
+
+        /* JEITO DO CURSO
+        // Usando Associação por Desestruturação ficaria assim:
+        let { tag, texto } = elementos[i];
+        // Criando a tag (msm jeito que eu fiz)
+        let tagCriada = document.createElement(tag);
+        // O texto também é um elemento, então dá pra criar
+        let textoCriado = document.createTextNode(texto);
+        
+        // Adicionando o texto na tag criada
+        tagCriada.appendChild(textoCriado);
+        // Adicionando a tag criada no container
+        div.appendChild(tagCriada);
+        */
 
         // Criando o novo elemento (tag definida pela variável)
         const tag = document.createElement(`${tagObj}`);
@@ -23,7 +38,6 @@ const divNova = document.createElement('div');
         tag.innerHTML = `${textoObj}`;
         // Implementando o novo elemento na div nova
         divNova.appendChild(tag)
-        console.log(tag);
         // Implementando a div nova na div pai
         principalDiv.appendChild(divNova);
     }
